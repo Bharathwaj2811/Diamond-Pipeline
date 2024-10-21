@@ -1,0 +1,43 @@
+###
+### A complete description of a Prefect Deployment for flow 'diamond-api'
+###
+name: diamond_deployment
+description: null
+version: f1d95af59903813887a7f2932eab3adc
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+schedules: []
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: diamond-api
+manifest_path: null
+storage: null
+path: F:\Projects\Diamond Quality Prediction
+entrypoint: diamond_pipeline.py:diamond_api
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2024-04-29T09:52:10.233790+00:00'
+triggers: []
+enforce_parameter_schema: null
